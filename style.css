@@ -181,7 +181,7 @@ figcaption {
 
 /** Adjust Dots Above */
 
-.dot.active {
+.annotate .dot.active {
     width: 100%;
     height: 100%;
     border-radius: 0;
@@ -189,12 +189,14 @@ figcaption {
     left: 0;
     right: 0;
     bottom: 0;
+    padding: 16px;
+    overflow: scroll;
+    z-index: 2;
 }
 
 .dot.active .inner,
 .dot.active .close {
     display: block;
-    padding: 16px;
     color: white;
    
 }
@@ -206,6 +208,8 @@ figcaption {
 @media(min-width: 681px) {
     /* Any adjustments for tablets and larger go here.
     Note these styles will be applied to anything 681px or larger -- so tablet AND desktop */
+
+    
 }
 
 
