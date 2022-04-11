@@ -93,11 +93,21 @@ figcaption {
 .container.image {
     max-width: 1200px;
     padding: 0;
+    -webkit-filter: brightness(100%);
 }
 
 .container.image .caption,
 .container.image figcaption {
     padding: 5px 10px;
+}
+#dim:hover {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+
 }
 
 .collage {
@@ -116,9 +126,9 @@ figcaption {
  }
 
 .dot{
-    width: 25px;
-    height: 25px;
-    border: 2px solid white;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #ff00ea;
     border-radius: 50%;
     position: absolute;
     
@@ -130,18 +140,46 @@ figcaption {
    
 }
 
-.pink {
-    background-color: rgba(240, 161, 175, 0.65);
+.blue {
+    background-color: rgba(24, 154, 180, 0.85);
 }
 
 .annotate {
     position: relative;
 }
 
-#camera:not(.active) {
-    top: 20%;
-    left: 31%;
+/** Adjust Dots Below */
+#blocks:not(.active) {
+    top: 80%;
+    right: 25%;
 }
+
+#ink:not(.active) {
+    bottom: 15%;
+    left: 20%;
+}
+
+#press:not(.active) {
+    bottom: 35%;
+    left: 40%;
+}
+
+#dry:not(.active) {
+    top: 40%;
+    right: 42%;
+}
+
+#wall:not(.active) {
+    top: 33%;
+    left: 25%;
+}
+
+#editioning:not(.active) {
+    top: 48%;
+    left: 8%;
+}
+
+/** Adjust Dots Above */
 
 .dot.active {
     width: 100%;
@@ -156,6 +194,8 @@ figcaption {
 .dot.active .inner,
 .dot.active .close {
     display: block;
+    padding: 16px;
+    color: white;
    
 }
 
